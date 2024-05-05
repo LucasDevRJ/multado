@@ -38,6 +38,13 @@ main {
 
 #botao {
     padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20%;
+    background-color: #DCDCDC;
+    border: none;
+    color: #2F4F4F;
 }
 
 label, p {
