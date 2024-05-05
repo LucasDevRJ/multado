@@ -1,6 +1,6 @@
 let botao = document.getElementById("botao");
 let p = document.createElement("p");
-let main = document.querySelector("main");
+let conteudo = document.getElementById("conteudo");
 let img = document.createElement("img");
 
 function verificaVelocidade() {
@@ -13,6 +13,7 @@ function verificaVelocidade() {
         if (velocidade > 107.00) {
             var paragrafoConteudo = document.createTextNode("Você ultrapassou o limite de velocidade, portanto foi multado!");
             img.src = "../img/multado.jpg";
+            p.classList.add("com-multa");
         } else {
             var paragrafoConteudo = document.createTextNode("Velocidade está dentro do limite, parabéns!");
             img.src = "../img/sem-multa.jpg";
@@ -21,17 +22,17 @@ function verificaVelocidade() {
     }
 
     botao.disabled = true;
-    main.appendChild(p);
+    conteudo.appendChild(p);
     p.appendChild(paragrafoConteudo);
-    main.appendChild(img);
+    conteudo.appendChild(img);
 
     setTimeout(apagaRegistros, 3000);
 }
 
 function apagaRegistros() {
     p.textContent = "";
-    main.removeChild(p);
-    main.removeChild(img);
+    conteudo.removeChild(p);
+    conteudo.removeChild(img);
     botao.disabled = false;
     p.classList.remove("valor-invalido");
     p.classList.remove("sem-multa");
