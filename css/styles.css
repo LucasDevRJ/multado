@@ -1,3 +1,11 @@
+body { 
+    background-image: url("../img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -6,6 +14,26 @@ main {
     height: 600px;
     justify-content: center;
     gap: 5px 0;
+    
+}
+
+.conteudo {
+    background-color: #E0FFFF;
+    padding: 30px;
+    width: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px #5F9EA0;
+}
+
+.conteudo-botao {
+    display: flex;
+    justify-content: center;
+}
+
+#botao {
+    padding: 10px 20px;
 }
 
 label, p {
