@@ -7,3 +7,15 @@ main {
     justify-content: center;
     gap: 5px 0;
 }
+
+label, p {
+    font-size: 18px;
+}
+
+.valor-invalido {
+    color: #FF0000;
+}
+
+.sem-multa {
+    color: #00BFFF;
+}
